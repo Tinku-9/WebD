@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1751</title>
+    <script>
+         var regnam;
+         var regnoo;
+function regno()
+{
+    
+    regnoo=prompt("Enter reg no:");
+}
+function regname()
+{
+   
+    regnam=prompt("Enter name:");
+}
+function result()
+{ 
+    document.getElementById("answer" ).innerHTML=`<h2 style=" border-color; red;color:blue;">${regnoo}</h2>`;
+}
+    </script>
+</head>
+<body>
+    <button onclick="regno()">Enter reg no</button><br><br>
+
+    <button onclick="regname()">Enter name</button>
+    <br>
+    <br>
+    <button onclick="result()">display result</button>
+    <div id="answer"></div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCKK</title>
+    <style>
+      #clock{
+        height: 500px;
+        width: 100px;
+        font-size: 100px;
+      }
+    </style>
+</head>
+<body >
+    <div id="clock"></div>
+    <script>
+         id1=document.getElementById("clock");
+        let button1=document.createElement("button");
+        button1.innerText="Click me for time";
+        button1.setAttribute("height","500px");
+        button1.setAttribute("width","500px");
+        document.body.appendChild(button1);
+        button1.addEventListener("click",getTime);
+        var timout;
+        function getTime(){
+            id1.style.display="block";
+            var time =new Date();
+            var h=time.getHours();
+            var m=time.getMinutes();
+            var s=time.getSeconds();
+            var mm=time.getMilliseconds();
+            var clock=document.getElementById("clock");
+            clock.innerHTML=`${h}:${m}:${s}:${mm}`;
+         timout=setTimeout(getTime,1);
+
+            
+        
+        }
+        let button2=document.createElement("button");
+        button2.innerText="Click me to remove time";
+        button1.setAttribute("height","500px");
+        button1.setAttribute("width","500px");
+        document.body.appendChild(button2);
+        button2.addEventListener("click",function(){
+           
+          id1.style.display="none";
+            clearTimeout(timout);
+        })
+        console.log("Displays the time for infinte times");
+    </script>
+</body>
+</html>

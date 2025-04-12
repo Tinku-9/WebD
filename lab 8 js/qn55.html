@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>23BCE1751</title>
+    <script>
+        let l=0;
+        function fn(){
+        l = document.getElementById("ip1").value;
+    document.write(`<div style="margin: auto; border: solid 5px red; background-color: lightgray; align-items: center;width:25%; height: 50px; text-align: center;">${l}</div>`);   
+    }
+    function fn1()
+    {
+        let name=document.getElementById("ip2").value;
+        document.getElementById("id3").innerHTML=`<div style=" margin: auto; border: solid 1px red;  background-color: grey; align-items: center; width: 25%; height: 50px; text-align: center; ">${name}</div>`;
+    }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <label>Enter reg no:</label>
+        <input type="text" id="ip1"><br><br>
+        <label>Enter name:
+        </label>
+        <input type="text" id="ip2">
+        <br>
+        <br>
+        
+        
+      
+    </form>
+    <button onclick="fn()"> 
+        result of reg
+    </button><br><br>
+    <button onclick="fn1()"> 
+        result of name
+    </button>
+    <p id="id3"></p>
+  
+    
+    
+</body>
+</html>

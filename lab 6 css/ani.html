@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border:2px solid ;
+            border-color: blue;
+            animation: tinku 3s infinite  alternate-reverse;
+            translate: 450px;
+
+        
+        }
+        @keyframes tinku{
+            0%{
+                 background-color: red;
+                 transform: translateY(200px);
+
+                 scale:3
+            }
+            50%{
+                background-color: orange;
+                transform: translateX(50px);
+                rotate: 18deg;
+                scale:5;
+                
+            }
+            75%{
+                  background-color: black;
+            }
+            100%{
+                background-color: yellow;
+                transform: translate(50px,100px);
+                scale:10;
+                border-radius: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        
+    </div>
+</body>
+</html>

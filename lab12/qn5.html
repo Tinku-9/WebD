@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1751</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        #id1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            top:20px;
+            opacity: 0.9;
+        }
+        #id2{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            top:40px;
+            left:20px;
+            opacity: 0.9;
+        }
+
+        #id3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            top:60px;
+            left:40px;
+            opacity: 0.9;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="id1"></div>
+        <div id="id2"></div>
+        <div id="id3"></div>
+    </div>
+    <script>
+        let id1=document.getElementById("id1");
+        let id2=document.getElementById("id2");
+        let id3=document.getElementById("id3");
+        id2.addEventListener("mouseover",function(){
+            id2.style.zIndex=1;
+            id3.style.zIndex=-1;
+            id1.style.zIndex=-1;
+            id2.innerText="10";
+            id1.innerText="1";
+            id3.innerText="1";
+        });
+        id1.addEventListener("mouseover",function(){
+            id1.style.zIndex=1;
+            id2.style.zIndex=-1;
+            id3.style.zIndex=-1;
+            id2.innerText="1";
+            id1.innerText="10";
+            id3.innerText="1";
+
+        });
+        id3.addEventListener("mouseover",function(){
+            id3.style.zIndex=1;
+            id2.style.zIndex=-1;
+            id1.style.zIndex=-1;
+            id2.innerText="1";
+            id1.innerText="1";
+            id3.innerText="10";
+        });
+
+    </script>
+</body>
+</html>

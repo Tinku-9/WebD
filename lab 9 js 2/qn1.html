@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1751</title>
+    
+    <script>
+        function i1()
+        {
+            let str=prompt("Enter the temperature readings with (,)");
+            str=str.split(',');
+            let counthot=0,coutpl=0,countcold=0;
+            for(let i=0;i<str.length;i++)
+            {
+                if(str[i]>85)
+            {
+                document.getElementById("table11").innerHTML+=`<tr><td>${str[i]}</td><td>HOT</td></tr>`;
+              
+                counthot++;
+            }
+            else if(str[i]<84&&str[i]>60)
+
+            {
+                document.getElementById("table11").innerHTML+=`<tr><td>${str[i]}</td><td>PLEASANT</td></tr>`;
+                
+
+                coutpl++;
+            }
+            
+            else if(str[i]<=60)
+            {
+                document.getElementById("table11").innerHTML+=`<tr><td>${str[i]}</td><td>COLD</td></tr>`;
+              
+                countcold++;
+            }
+        }
+        document.getElementById("para").innerHTML=`<table border=3 cellspacing=0 >
+        <tr>
+            <th>
+                weather category
+            </th>
+            <th>
+                no of days
+            </th>
+        </tr>
+        <tr>
+            <td>hot days</td>
+            <td>${counthot}</td>
+        </tr>
+        <tr>
+            <td>Plesant days</td>
+            <td>${coutpl}</td>
+        </tr>
+        <tr>
+            <td>Cold days</td>
+            <td>${countcold}</td>
+        </tr>
+    </table>`};
+
+    </script>
+</head>
+<body>
+    <h1><b>Temperature recordings of New York City</b></h1>
+    <button onclick="i1()">Input</button>
+    <table id="table11" border="1px">
+        <tr>
+            <th>degree</th>
+            <th>category</th>
+        </tr>
+    </table>
+    <p id="para">
+
+    </p>
+    
+</body>
+</html>

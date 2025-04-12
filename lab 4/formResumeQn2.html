@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1751</title>
+    <style>
+        #s1{
+            color: rgb(255, 17, 17);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            width: 350px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="color: red; font-size: large"><b>Personal Details</b></legend>
+            <label>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"><br><br>
+            <label>Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="password"><br><br>
+            <label for="">E-mail id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email"><br><br>
+            <label>Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio"><label>Male</label><input type="radio" checked><label>Female</label><br><br>
+            <label>DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="date"><br><br>
+            <label>Mobile#:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><span>format:123-456-7890</span>
+        </fieldset><br><br>
+        <fieldset style="width: 450px;">
+            <legend style="color:rgb(255, 0, 0);font-family: sans-serif;font-size: large;"><b>Educational Qualification</b></legend>
+            <br><br><br>
+            <label for="dd">Degree:</label>
+            <select id="dd" >
+                <option value="" disabled selected hidden>--select group--</option>
+                <optgroup value="UG" label="UG">
+                <option value="">BE</option>
+                <option value="">Btech</option>
+                <option value="">Bsc</option>
+                <option value="">BA</option>
+                <option value="">BCA</option>
+                <option value="">BBA</option>
+                <option value="">Others</option></optgroup>
+                <optgroup value="UG" label="PG">
+                    <option value="">ME</option>
+                    <option value="">Mtech</option>
+                    <option value="">Msc</option>
+                    <option value="">MA</option>
+                    <option value="">MCA</option>
+                    <option value="">MBA</option>
+                    <option value="">Others</option></optgroup>
+                    <optgroup value="UG" label="Phd">
+                        <option value="">Engineering</option>
+                        <option value="">Science</option>
+                        <option value="">Management</option>
+                        <option value="">Others</option>
+                        </optgroup>
+            </select>
+            <label id="s1">&nbsp &nbspEngineering</label>
+            <select>
+                <option value="dummy"   selected  >--Select group--</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECH">MECH</option>
+            </select>
+        </fieldset>
+        <BR><BR>
+            <label for="Hobbies">hobbies:</label><input type="checkbox">playing chess <input type="checkbox">Reading books
+        <br><br>
+        Favourite Color: <input type="color">
+
+        <P style="font-size: large;color: red;"> <b>Address</b></P>
+        <textarea name="dummy" id="owow" rows=5 cols="70px"></textarea>
+        <br><br>
+
+        <label>Attch Resume: </label><input type="file"><input type="submit">
+
+    </form>
+</body>
+</html>
